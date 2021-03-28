@@ -1,0 +1,22 @@
+usr/share/man.......................Traditional Linux package documentation.
+usr/share/doc.......................Documentation for each installed software
+less................................read texts	
+zless...............................read compressed texts
+sudo apt-get update.................download the latest list of updates	
+sudo apt-get upgrade................upgrade to a newer version of Ubuntu.
+/ var/cache/apt/archives............a place for apt to store its deb files.
+Apt-get clean.......................clean unnecessary files from the previously mentioned directory
+apt-get autoclean...................does the same job.
+Sudo apt-get install <name>.........installs a package.
+Sudo apt-get remove <name>..........removes the package but keeps configuration files.
+Sudo apt-get remove -purge <name>...removes he package as well as its configurations.
+Apt-cache search name...............search a name into var/cache/apt/archives
+apt-get.............................provides a list of apt-get capabilities
+*************************************************************************
+**************************Packages and Tools*****************************
+*************************************************************************
+build-essential..............a package to ensure that all the tool for compilation is provided on the system
+automake.....................a build tool
+checkinstall.................a build tool
+*************************************************************************
+
