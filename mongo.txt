@@ -1,11 +1,67 @@
-**********************************
-**********MongoDB commands********
-**********************************
+*******************************************************************************************
+************************************MongoDBcommands****************************************
+*******************************************************************************************
+
+                                
+                           |document_1 : {field_1:value, field_2:value,...,field_n:value}
+                           |document_2 : {field_1:value, field_2:value,...,field_n:value}
+           |  collection_1:|.
+           |               |.
+           |               |.
+           |               |document_n : {field_1:value, field_2:value,...,field_n:value}
+           |
+           |               |document_1 : {field_1:value, field_2:value,...,field_n:value}
+           |               |document_2 : {field_1:value, field_2:value,...,field_n:value}
+database_n:|  collection_2:|.
+           |               |.
+           |               |.
+           |               |document_n : {field_1:value, field_2:value,...,field_n:value}
+           |      .
+           |      .
+           |      .        |document_1 : {field_1:value, field_2:value,...,field_n:value}
+           |               |document_2 : {field_1:value, field_2:value,...,field_n:value}
+           |  collection_n:|.
+                           |.
+                           |.
+                           |document_n : {field_1:value, field_2:value,...,field_n:value}
+                               
+                               
+                               
+                               
+____________________________________________________________________________________________
+        
 $ mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork...............
 deff: Runs mongodb.
 ____________________________________________________________________________________________
 > show databases.........
 deff: Lists the databases and the storage occupied by them.
 ____________________________________________________________________________________________
+> db..........
+deff: To identify the current database.
+____________________________________________________________________________________________
+> show collections........
+deff: see what collections exist in this database.
+____________________________________________________________________________________________
+> use <new database>....
+deff: Switech to a new database.
+____________________________________________________________________________________________
+> db.collectionName.insertOne({}).....
+> db.collectionName.insertMany([{},{},{}...,{}]).....
+deff: defining one/many document in a collection in global object "db".
+CREATE
+remember: "db" is a global object.
+____________________________________________________________________________________________
+> db.collectionName.find(filter, projection).....
+> db.collectionName.findOne().....
+deff: Lists one/all the documents in a collection.
+READ
+____________________________________________________________________________________________
+> db.collectionName.drop().....
+deff:  Erasing a collection object itself.
+____________________________________________________________________________________________
+> db.collectionName.createIndex({fieldName:1},{unique:true})......
+deff: Creates a unique index on a desired field of our documents.
+____________________________________________________________________________________________
 
+ 
 
