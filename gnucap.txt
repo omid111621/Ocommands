@@ -1,0 +1,79 @@
+**********************************************************************
+**************************** gnucap **********************************
+**********************************************************************
+http://www.gnu.org/software/gnucap
+----------------------------------------------------------------------
+T = Tera = e12
+G = Giga = e9
+Meg = Mega = e6
+K = Kilo = e3
+m = milli = e-3
+u = micro = e-6
+n = nano = e-9
+p = pico = e-12
+f = femto = e-15
+---------------------------------------------------------------------
+Quiet............ Suppress all unnecessary output. 
+Echo............. Echo all disk reads to the console. 
+Basic............ Format the output for compatibility with other software. 
+Pack............. Remove extra spaces from the output.  
+<   ............. Take the input from a file. 
+>   ............. Direct the output to a file. 
+>>  ............. Direct the output to a file. 
+|   ............. Pipe the output to a program.
+*   ............. Comment line.
+!   ............. Pass a command to the operating system.
+--------------------------------------------------------------------------------------------
+AC  ............. Performs a small signal AC (frequency domain) analysis. Sweeps frequency.
+DC  ............. Performs a nonlinear DC analysis, for determining transfer characteristics. Sweeps DC input or component values.
+FOURIER ......... Transient analysis, with results in frequency domain. (Different from SPICE.)
+GENERATOR ....... View and set the transient analysis function generator.
+IC  ............. Set transient analysis initial conditions. (Not implemented.)
+OP  ............. Performs a nonlinear DC analysis, for determining quiescent operating conditions. Sweeps temperature.
+TRANSIENT ....... Performs a nonlinear transient (time domain) analysis. Sweeps time.
+--------------------------------------------------------------------------------------------
+ALARM  .......... Select points in circuit check against limits.
+ALTER  .......... Perform analyses in queue. Changes follow. (Not implemented.)
+END    .......... Perform analyses in queue. New circuit follows. (Implemented incorrectly.)
+--------------------------------------------------------------------------------------------
+BUILD  .......... Build a new circuit or change an existing one.
+EDIT   .......... Edit the circuit description using your editor.
+FAULT  .......... Temporarily change a component.
+GET    .......... Get a circuit from a disk file.
+MODIFY .......... Change a value, node, etc. For very simple changes.
+NODESET ......... Preset node voltages, to assist convergence. (Not implemented.)
+--------------------------------------------------------------------------------------------
+CLEAR  .......... Delete the entire circuit, titles, etc.
+DELETE .......... Delete a part, or group of parts.
+EXIT   .......... Exits the program. (Same as quit.)
+QUIT   .......... Exits the program. (Same as exit.)
+---------------------------------------------------------------------------------------------
+
+DISTO  .......... SPICE command not implemented.
+CHDIR  .......... Change current directory.
+INCLUDE ......... Include a file from disk.
+LIST ............ List the circuit on the console.
+LOG  ............ Save a record of commands.
+---------------------------------------------------------------------------------------------
+
+MARK Mark this time point, so transient analysis will restart here.
+MERGE Get a file from disk. Add it the what is already in memory.
+OPTIONS View and set system options. (Same as set.)
+PARAMETER Set or view parameters.
+PAUSE Wait for key hit, while in batch mode.
+PLOT Select points in circuit (and their range) to plot.
+PRINT Select which points in the circuit to print as table.
+SAVE Save the circuit in a file.
+STATUS Display resource usage, etc.
+SWEEP Sweep a component. (Loop function.)
+TEMP Set or view temperature.
+TITLE View and create the heading line for printouts and files.
+UNFAULT Undo faults.
+UNMARK Undo mark. Release transient start point.
+WIDTH Set output width.
+---------------------------------------------------------------------------------------------
+TF .............. SPICE command not implemented.
+SENS ............ SPICE command not implemented.
+NOISE ........... SPICE command not implemented.
+
+
