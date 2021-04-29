@@ -19,4 +19,13 @@ build-essential..............a package to ensure that all the tool for compilati
 automake.....................a build tool
 checkinstall.................a build tool
 *************************************************************************
+pwd ..................shows the curren directory
+/   .................... absolute directory from root
+./  ...................current directory(relative path)
+~   ....................home directory
+cd  ...................home dirwctory
+*************************************************************************
+nano ................command line text editor.
+sudo su..............root user
+su <username>........switch user to username
 
