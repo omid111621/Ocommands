@@ -28,4 +28,6 @@ cd  ...................home dirwctory
 nano ................command line text editor.
 sudo su..............root user
 su <username>........switch user to username
-
+*************************************************************************
+apt-cache search name*....................lists every package that hase "name" in its name.
+apt-cache policy packageName..............returns the information of currently installed packed on your system

@@ -76,24 +76,28 @@ TF .............. SPICE command not implemented.
 SENS ............ SPICE command not implemented.
 NOISE ........... SPICE command not implemented.
 ---------------------------------------------------------------------------------------------
--------------------------------------- DEVICE MODELS---------------------------------------
-R......................Semiconductor resistor model
-C......................Semiconductor capacitor model
-SW.....................Voltage controlled switch
-CSW....................Current controlled switch
-URC....................Uniform distributed RC model
-LTRA...................Lossy transmission line model
-D......................Diode model
-NPN....................NPN BJT model
-PNP....................PNP BJT model
-NJF....................N-channel JFET model
-PJF....................P-channel JFET model
-NMOS...................N-channel MOSFET model
-PMOS...................P-channel MOSFET model
-NMF....................N-channel MESFET model
-PMF....................P-channel MESFET model
----------------------------------------------------------------------------------------------
-.MODEL MNAME TYPE (PNAME1=PVAL1 PNAME2=PVAL2 ... )--------------------- DEVICE MODELS
+ 
+--------------------------------------DEVICE MODELS---------------------------------------------
+.MODEL MNAME TYPE (PNAME1=PVAL1 PNAME2=PVAL2 ... )-----------------DEVICE MODELS
+-------R-----------------------------------------------------------Semiconductor resistor model
+-------C-----------------------------------------------------------Semiconductor capacitor model
+-------SW----------------------------------------------------------Voltage controlled switch
+-------CSW---------------------------------------------------------Current controlled switch
+-------URC---------------------------------------------------------Uniform distributed RC model
+-------LTRA--------------------------------------------------------Lossy transmission line model
+-------D-----------------------------------------------------------Diode model
+-------NPN---------------------------------------------------------NPN BJT model
+-------PNP---------------------------------------------------------PNP BJT model
+-------NJF---------------------------------------------------------N-channel JFET model
+-------PJF---------------------------------------------------------P-channel JFET model
+-------NMOS--------------------------------------------------------N-channel MOSFET model
+-------PMOS--------------------------------------------------------P-channel MOSFET model
+-------NMF---------------------------------------------------------N-channel MESFET model
+-------PMF---------------------------------------------------------P-channel MESFET model
+----------------------------------SUBCIRCUIT DFINITION-----------------------------------------
+.SUBCKT subname <N1 N2 N3 ... >
 
-
+.ENDS subname
+--------------------------------- COMBINIG FILES-----------------------------------------------
+.INCLUDE filePath
 
